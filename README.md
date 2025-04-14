@@ -29,7 +29,7 @@ To measure how long it takes to read a small spatial subset (2 × 2 km) from a s
 
 The benchmark shows that **file format and internal encoding**, not cloud infrastructure, are the main determinants of read performance.
 
-The poor performance of CDSE’s Sentinel-2 JPEG 2000 files is due to the **absence of the Tile-part Length Marker (TLM)**. Without TLMs, spatial subsetting triggers many redundant read operations. This issue is discussed in the [sentinel-2-jp2-tlm project](https://github.com/Kayrros/sentinel-2-jp2-tlm), which shows that adding TLM dramatically improves performance.
+The poor performance of CDSE’s Sentinel-2 JPEG 2000 files is likely due to the **absence of the Tile-part Length Marker (TLM)**. Without TLMs, spatial subsetting triggers many redundant read operations. This issue is discussed in the [sentinel-2-jp2-tlm project](https://github.com/Kayrros/sentinel-2-jp2-tlm), which shows that adding TLM dramatically improves performance.
 
 ## 📓 Notebook
 
